@@ -1,0 +1,38 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+Жыве Беларусь
+{%endblock%}
+
+{%block content%}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Украина держись</h3>
+
+    </div>
+  </header>
+
+  <form class="px-3">
+    <h1>Украина держись</h1>
+    {%csrf_token%}
+    <br>
+    <p class="lead">Украина — унитарное государство и парламентско-президентская республика. Должность президента с 20 мая 2019 года занимает Владимир Зеленский, премьер-министра с 4 марта 2020 года — Денис Шмыгаль.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p>
+    {{form1.title}}<br><br>
+    <button type="submit" class="btn btn-success">Отправить</button>
+  </form>
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
+</div>
+
+
+{%endblock%}
+
+
+
+

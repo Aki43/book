@@ -1,0 +1,17 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+{{title1}}
+{%endblock%}
+
+{%block content%}
+<h1>Страница про Нас</h1>
+     {% for el in posts%}
+    <div class="alert alert-warning mt-2">
+        <h3>{{el.title}}</h3>
+        <p>{{el.body}}</p>
+        <p>{{el.created_on}}</p>
+        <p>{{el.last_modified}}</p>
+    </div>
+    {%endfor%}
+{%endblock%}
